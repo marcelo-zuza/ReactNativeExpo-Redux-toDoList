@@ -12,10 +12,11 @@ export default function App() {
 
   return (
     <Provider store={store}>
-      <View className='bg-neutral-500 w-screen flex flex-1 content-center items-center px-20 py-4'>
+      <View className='bg-sky-500 w-screen flex flex-1 content-center items-center px-20 py-4'>
         <View>
-          <Text className='text-white text-5xl text-center'>To Do List</Text>
-          <Text className='text-white text-3xl text-center'>Powered by Marcelo Zuza</Text>
+          <Text className='text-white font-bold text-4xl md:text-5xl text-center'>To Do List</Text>
+          <Text className='text-white font-bold text-xl md:text-3xl text-center'>Powered by</Text>
+          <Text className='text-white font-bold text-2xl md:text-3xl text-center'>Marcelo Zuza</Text>
 
         </View>
 

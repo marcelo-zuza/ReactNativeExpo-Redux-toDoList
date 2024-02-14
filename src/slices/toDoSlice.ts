@@ -29,9 +29,14 @@ const toDoSlice = createSlice({
       if (toDo) {
         toDo.completed = !toDo.completed;
       }
+    },
+    removeToDo: (state: any, action: any) => {
+      state.list = state.list.filter(
+        (toDo: any) => toDo.id !== action.payload
+      );
     }
   },
 });
 
-export const { addTodo, toggleTodo } = toDoSlice.actions;
+export const { addTodo, toggleTodo, removeToDo } = toDoSlice.actions;
 export default toDoSlice.reducer;
