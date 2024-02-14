@@ -21,9 +21,9 @@ const AddToDo = () => {
       };
 
   return (
-    <View className='flex flex-1 px-10 py-4'>
+    <View className='flex flex-row py-4 gap-4'>
       <Text className='text-white'></Text>
-      <TextInput value={input} onChangeText={handleInputChange} className='bg-white text-xl px-2 py-1 rounded-lg' placeholder='Insert your task' />
+      <TextInput value={input} onChangeText={handleInputChange} className='bg-white text-sm md:text-xl px-2 py-1 rounded-lg' placeholder='Insert your task' />
       <Pressable onPress={handleSubmit} className='bg-sky-600 text-white py-2 px-2 my-2 w-14 rounded-lg'><Text className='text-white'>Send</Text></Pressable>
     </View>
   )
